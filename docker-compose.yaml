@@ -1,0 +1,8 @@
+services:
+  portfolio-site:
+    build: .
+    container_name: portfolio-site
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/usr/share/nginx/html
