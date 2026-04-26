@@ -20,3 +20,72 @@ body::before {
 }
 
 section { padding: var(--section-padding); }
+
+/* Hero Section Layout */
+.section-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Skills Section Layout */
+.section-skills { background-color: rgba(13, 13, 13, 0.6); }
+
+.skills-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.skills-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills-grid-wrapper { flex: 1; }
+
+/* Layout for the 404 error page */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 6rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.error-page p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
