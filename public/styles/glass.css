@@ -1,0 +1,34 @@
+/* Global, blurred yellow glow in the page background */
+.ambient-glow {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.05) 0%, transparent 70%);
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Positioning glows across the entire page */
+.glow-1 { top: 15%; left: -10%; }
+.glow-2 { top: 45%; right: -15%; }
+.glow-3 { bottom: 5%; left: 10%; }
+
+/* Base for a "glass" look for all tiles */
+.skill-item, .project-card, .cert-card, .contact-card {
+    background-color: rgba(23, 23, 23, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Unified hover (hover + yellow glow) for all tiles */
+.skill-item:hover, .project-card:hover, .cert-card:hover, .contact-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 204, 0, 0.4);
+    box-shadow: 0 15px 40px rgba(255, 204, 0, 0.08);
+}

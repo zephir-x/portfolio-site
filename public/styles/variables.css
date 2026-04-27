@@ -1,7 +1,7 @@
 :root {
     /* Main Colors */
     --bg-main: #0d0d0d;
-    --bg-surface: #171717;
+    --bg-surface: rgba(23, 23, 23, 0.4);
     --accent-color: #ffcc00;
     --text-primary: #ffffff;
     --text-secondary: #a3a3a3;
@@ -9,7 +9,17 @@
     /* Typography */
     --font-main: 'Inter', sans-serif;
     
-    /* Desktop Layout */
+    /* Layout */
     --container-width: 1200px;
-    --section-padding: 100px 0;
+    --section-padding: 120px 0;
+    --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+    --glass-blur: blur(12px);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
+
+/* Utility Classes */
+.ml-8 { margin-left: 8px; }
+.mr-8 { margin-right: 8px; }
+.highlight { color: var(--accent-color); }

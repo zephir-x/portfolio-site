@@ -1,17 +1,19 @@
-/* Subtle mesh in the background of the entire bodysuit */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+/* Global Ambient Glows */
+.ambient-glow {
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.04) 0%, transparent 70%);
+    filter: blur(100px);
     z-index: -1;
     pointer-events: none;
 }
 
+.glow-1 { top: 10%; left: -15%; }
+.glow-2 { top: 40%; right: -15%; }
+.glow-3 { bottom: 5%; left: 10%; }
+
+/* Common Container and Sections */
 .container {
     width: 100%;
     max-width: var(--container-width);
@@ -19,73 +21,86 @@ body::before {
     padding: 0 40px;
 }
 
-section { padding: var(--section-padding); }
-
-/* Hero Section Layout */
-.section-hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
+section { 
+    padding: var(--section-padding); 
+    position: relative; 
 }
 
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
+/* Unified glass effect for all cards */
+.skill-item, .project-card, .cert-card, .contact-card {
+    background-color: var(--bg-surface);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    transition: var(--transition-smooth);
 }
 
-.hero-image-wrapper {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
+.skill-item:hover, .project-card:hover, .cert-card:hover, .contact-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 204, 0, 0.4);
+    box-shadow: 0 20px 40px rgba(255, 204, 0, 0.08);
 }
 
-.hero-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* Section Hero */
+.section-hero { 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    padding-top: 80px; 
 }
 
-/* Skills Section Layout */
-.section-skills { background-color: rgba(13, 13, 13, 0.6); }
-
-.skills-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 60px;
+.hero-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 60px; 
 }
 
-.skills-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.hero-image-wrapper, .hero-content { flex: 1; }
+
+/* Section Skills */
+.skills-container { 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 80px; 
 }
 
-.skills-grid-wrapper { flex: 1; }
+.skills-content { flex: 0 0 40%; }
 
-/* Layout for the 404 error page */
-.error-page {
+.skills-grid { 
+    flex: 1; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+/* Sections Common Header */
+.section-header { margin-bottom: 80px; }
+
+/* Projects Grid */
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    align-items: start; 
+}
+
+.project-card:nth-child(even) { margin-top: 120px; }
+
+/* Certs Grid */
+.certs-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+/* Footer Layout */
+.footer-bottom {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.error-page h1 {
-    font-size: 6rem;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-}
-
-.error-page p {
-    color: var(--text-secondary);
-    margin-bottom: 30px;
-    font-size: 1.2rem;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }

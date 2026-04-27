@@ -1,0 +1,110 @@
+/* Typography */
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+/* Project Specifics */
+.project-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 32px;
+    line-height: 1.7;
+}
+
+.project-code-link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+/* Contact Section */
+.contact-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 20px 0 40px 0;
+    line-height: 1.1;
+}
+
+/* Social Icons Footer */
+.social-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.social-links a {
+    font-size: 3.4rem;
+    color: var(--text-secondary);
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-8px);
+}
+
+/* Links Tooltips */
+.link-details {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #000;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 204, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+}
+
+.social-links a:hover .link-details {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}

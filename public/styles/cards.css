@@ -1,0 +1,103 @@
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.hero-image:hover {
+    filter: grayscale(0%);
+    transform: translateY(-5px);
+}
+
+/* Skills Cards Specifics */
+.skill-item {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    opacity: 0.8;
+}
+
+.skill-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Project Cards Specifics */
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-graphic-wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.project-graphic {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-graphic { transform: scale(1.03); }
+
+.project-details {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    background-color: rgba(255, 204, 0, 0.03);
+    color: var(--accent-color);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 204, 0, 0.15);
+}
+
+/* Contact Card Specifics */
+.contact-card {
+    background: linear-gradient(145deg, rgba(23, 23, 23, 0.8) 0%, rgba(13, 13, 13, 1) 100%);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* The inner aura of the contact card */
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.05) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-card > * {
+    position: relative;
+    z-index: 1;
+}

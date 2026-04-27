@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "C# .NET od Podstaw do Tworzenia Aplikacji w WPF i XAML",
+    "issuer": "Udemy",
+    "date": "Issued: Jan 2026",
+    "icon": "fa-brands fa-windows",
+    "verifyUrl": "https://www.udemy.com/certificate/UC-4d09a01e-96e2-4cd9-b504-94d85cd6ffe3/"
+  },
+  {
+    "id": 2,
+    "title": "Git Fundamentals",
+    "issuer": "DataCamp",
+    "date": "Issued: Mar 2026",
+    "icon": "fa-brands fa-git-alt",
+    "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/05b3363f073087f76806c4d37be17af79fa60812?raw=1#"
+  },
+  {
+    "id": 3,
+    "title": "Github Foundations",
+    "issuer": "DataCamp",
+    "date": "Issued: Mar 2026",
+    "icon": "fa-brands fa-github",
+    "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/b0f068be8a23f3839d1cd413494b5a4ed5c91dec?raw=1"
+  },
+  {
+    "id": 4,
+    "title": "Containerization and Virtualization with Docker & Kubernetes",
+    "issuer": "DataCamp",
+    "date": "Issued: Mar 2026",
+    "icon": "fa-brands fa-docker",
+    "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/e94095558cea0c8d5749b3f50c2bfc79164fce75?raw=1"
+  },
+  {
+    "id": 5,
+    "title": "Responsive Web Design",
+    "issuer": "freeCodeCamp",
+    "date": "Issued: Mar 2026",
+    "icon": "fa-solid fa-laptop-code",
+    "verifyUrl": "https://www.freecodecamp.org/certification/zephir/responsive-web-design-v9"
+  },
+  {
+    "id": 6,
+    "title": "Advanced JavaScript",
+    "issuer": "Scrimba",
+    "date": "Issued: Apr 2026",
+    "icon": "fa-brands fa-js",
+    "verifyUrl": "https://scrimba.com/@zephir-x:certs;cert2ffentAFNn4SRV7vFni6aT9hK3ipPVAEJ2d7kqQX4XuT3x"
+  },
+  {
+    "id": 7,
+    "title": "SQL Associate",
+    "issuer": "DataCamp",
+    "date": "Issued: Apr 2026 & Expires: Apr 2028",
+    "icon": "fa-solid fa-database",
+    "verifyUrl": "https://www.datacamp.com/certificate/SQA0010192603264"
+  },
+  {
+    "id": 8,
+    "title": "Excel Fundamentals",
+    "issuer": "DataCamp",
+    "date": "Issued: Apr 2026",
+    "icon": "fa-solid fa-file-excel",
+    "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/a7931d7573bfaccc82b47aa4c277a32f8f20e128?raw=1"
+  }
+]

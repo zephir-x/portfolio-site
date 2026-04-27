@@ -14,10 +14,13 @@
 <body>
     <header class="navbar">
         <div class="container navbar-container">
-            <nav class="nav-links">
-                <a href="#hero">About Me</a>
+            <nav class="nav-links" id="nav-links">
+                <div class="nav-pill" id="nav-pill"></div>
+                
+                <a href="#hero" class="active">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#certs">Certs</a>
                 <a href="#contact">Contact</a>
             </nav>
             <a href="/assets/resume/IT-DEV-ENG.pdf" class="btn btn-primary" target="_blank">DOWNLOAD CV</a>
@@ -25,6 +28,11 @@
     </header>
 
     <main>
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+        <div class="ambient-glow glow-3"></div>
+        <div class="ambient-glow glow-4"></div>
+
         <section id="hero" class="section-hero">
             <div class="container hero-container">
                 <div class="hero-image-wrapper">
@@ -60,34 +68,69 @@
                     </p>
                 </div>
 
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fa-solid fa-code skill-icon"></i>
-                        <span class="skill-name">C# / .NET 8</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-server skill-icon"></i>
-                        <span class="skill-name">ASP.NET Web API</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-database skill-icon"></i>
-                        <span class="skill-name">SQL Server</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-diagram-project skill-icon"></i>
-                        <span class="skill-name">Entity Framework</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-layer-group skill-icon"></i>
-                        <span class="skill-name">Architecture</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-js-square skill-icon"></i>
-                        <span class="skill-name">JavaScript</span>
+                <div class="skills-grid"></div> 
+            </div>
+        </section>
+
+        <section id="projects" class="section-projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Portfolio</span>
+                    <h2 class="section-title">Featured <span class="highlight">Projects.</span></h2>
+                </div>
+                
+                <div id="projects-grid" class="projects-grid"></div>
+            </div>
+        </section>
+
+        <section id="certs" class="section-certs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Continuous Learning</span>
+                    <h2 class="section-title">My <span class="highlight">Certifications.</span></h2>
+                </div>
+                <div id="certs-grid" class="certs-grid"></div> </div>
+        </section>
+
+        <footer id="contact" class="section-footer">
+            <div class="container">
+                
+                <div class="contact-card">
+                    <span class="badge">Ready to start?</span>
+                    
+                    <h2 class="contact-title">Let's build something<br><span class="highlight">exceptional</span> together.</h2>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="social-links">
+                        <a href="tel:+48781686345" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="link-details">Call me</span>
+                        </a>
+                        
+                        <a href="https://www.facebook.com/kacper.gumulak.7" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span class="link-details">Facebook page</span>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/kacper-gumulak-639724362/" target="_blank" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="link-details">LinkedIn profile</span>
+                        </a>
+                        
+                        <a href="https://github.com/zephir-x" target="_blank" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="link-details">Check my code</span>
+                        </a>
+
+                        <a href="mailto:kacper.gumulak@gmail.com" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="link-details">Email me</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     </main>
 
     <script src="/scripts/main.js"></script>

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "C# / .NET 8", "icon": "fa-solid fa-code" },
+  { "id": 2, "name": "ASP.NET Web API", "icon": "fa-solid fa-server" },
+  { "id": 3, "name": "SQL Server", "icon": "fa-solid fa-database" },
+  { "id": 4, "name": "Entity Framework", "icon": "fa-solid fa-diagram-project" },
+  { "id": 5, "name": "Architecture", "icon": "fa-solid fa-layer-group" },
+  { "id": 6, "name": "JavaScript", "icon": "fa-brands fa-js-square" }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Game Store",
+    "description": "GameNest - Digital Game Distribution Platform.",
+    "imageUrl": "/assets/images/game-store.jpg",
+    "tags": ["PostgreSQL", "Docker", "JavaScript", "HTML5", "CSS3"],
+    "githubUrl": "https://github.com/zephir-x/game-store"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio Site",
+    "description": "My own portfolio site.",
+    "imageUrl": "/assets/images/portfolio-site.jpg",
+    "tags": ["Docker", "JavaScript", "HTML5", "CSS3", "JSON"],
+    "githubUrl": "https://github.com/zephir-x/portfolio-site"
+  },
+  {
+    "id": 3,
+    "title": "Finance Tracker",
+    "description": "Desktop finance management app.",
+    "imageUrl": "/assets/images/finance-tracker.jpg",
+    "tags": ["C#", ".NET 8", "WPF", "SQLite", "MVVM"],
+    "githubUrl": "https://github.com/zephir-x/finance-tracker"
+  },
+  {
+    "id": 4,
+    "title": "Hotel API",
+    "description": "RESTful API for a hotel reservation management system.",
+    "imageUrl": "/assets/images/hotel-api.jpg",
+    "tags": [".NET 9", "ASP.NET", "SQLite", "EF Core", "Swagger"],
+    "githubUrl": "https://github.com/geniuszmath75/dotnet-programming-pk/tree/main/project/HotelRestApi"
+  }
+]
