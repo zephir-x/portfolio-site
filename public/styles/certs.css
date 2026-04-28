@@ -37,26 +37,6 @@
     color: var(--accent-color);
 }
 
-/* Shine animation element */
-.cert-shine {
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
-    transform: skewX(-20deg);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.cert-card:hover .cert-shine { animation: shine-effect 0.7s forwards; }
-
-@keyframes shine-effect {
-    0% { left: -150%; }
-    100% { left: 200%; }
-}
-
 /* Cert content typography */
 .cert-content, .cert-link {
     position: relative;

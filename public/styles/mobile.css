@@ -1,0 +1,184 @@
+/* Mobile Responsiveness (Max Width: 768px)  */
+
+@media (max-width: 768px) {
+    
+    /* 1. Global Patches and Containers */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    .container { padding: 0 20px; }
+
+    section { padding: 80px 0; }
+
+    /* We turn off the flashlight feature on the phones */
+    .cursor-glow { display: none !important; }
+
+    /* 2. Typography Scaled Down */
+    .hero-title {
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 0 auto 40px auto;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 100%;
+        margin: 0 auto 40px auto;
+    }
+
+    /* 3. Navbar Fixes */
+    .navbar-container { 
+        gap: 10px; 
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-pill { display: none !important; }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        min-width: 0;
+        overflow-x: auto;
+        padding-bottom: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .nav-links::-webkit-scrollbar { display: none; }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        white-space: nowrap;
+        color: var(--text-secondary);
+    }
+
+    .nav-links a.active {
+        color: var(--accent-color) !important;
+        background-color: transparent !important;
+    }
+
+    .navbar .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    /* 4. Hero Section */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-image-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-image {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    .hero-content { align-items: center; }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+
+    /* 5. About Me & Timeline */
+    .about-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-content {
+        position: static;
+        text-align: center;
+    }
+
+    .about-timeline { padding-left: 20px; }
+
+    .timeline-card { padding: 20px; }
+
+    /* 6. Skills Section */
+    .skills-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .skills-content { text-align: center; }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* 7. Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    .project-card:nth-child(even) { margin-top: 0; }
+
+    .project-details { padding: 24px 20px; }
+
+    .project-title { font-size: 1.4rem; }
+
+    /* 8. Certs Section */
+    .certs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* 9. Contact & Footer */
+    .contact-card { padding: 50px 20px; }
+
+    .contact-title { font-size: 2.2rem; }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .social-links {
+        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links a { font-size: 2.6rem; }
+}

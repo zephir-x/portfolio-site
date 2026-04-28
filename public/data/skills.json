@@ -1,8 +1,42 @@
 [
-  { "id": 1, "name": "C# / .NET 8", "icon": "fa-solid fa-code" },
-  { "id": 2, "name": "ASP.NET Web API", "icon": "fa-solid fa-server" },
-  { "id": 3, "name": "SQL Server", "icon": "fa-solid fa-database" },
-  { "id": 4, "name": "Entity Framework", "icon": "fa-solid fa-diagram-project" },
-  { "id": 5, "name": "Architecture", "icon": "fa-solid fa-layer-group" },
-  { "id": 6, "name": "JavaScript", "icon": "fa-brands fa-js-square" }
+  {
+    "id": 1,
+    "name": "C# & .NET 8",
+    "icon": "fa-brands fa-microsoft"
+  },
+  {
+    "id": 2,
+    "name": "ASP.NET & Web API",
+    "icon": "fa-solid fa-server"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "icon": "fa-brands fa-js"
+  },
+  {
+    "id": 4,
+    "name": "HTML5 & CSS3",
+    "icon": "fa-brands fa-html5"
+  },
+  {
+    "id": 5,
+    "name": "SQL & EF Core",
+    "icon": "fa-solid fa-database"
+  },
+  {
+    "id": 6,
+    "name": "Docker & Kubernetes",
+    "icon": "fa-brands fa-docker"
+  },
+  {
+    "id": 7,
+    "name": "Git & GitHub",
+    "icon": "fa-brands fa-git-alt"
+  },
+  {
+    "id": 8,
+    "name": "WPF & MVVM (Desktop)",
+    "icon": "fa-solid fa-desktop"
+  }
 ]

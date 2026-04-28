@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "date": "2023 - Present",
+    "title": "Engineering Foundations",
+    "description": "Began Computer Science studies at Cracow University of Technology. Building strong foundations in OOP, algorithms, SQL databases, and working across Windows/Linux (WSL) environments."
+  },
+  {
+    "id": 2,
+    "date": "2024 - 2025",
+    "title": "Backend & Architecture",
+    "description": "Deep dive into the .NET ecosystem. Built desktop apps (WPF/MVVM) and developed ASP.NET Core REST APIs, using Postman for endpoint testing. Also explored Java through academic projects."
+  },
+  {
+    "id": 3,
+    "date": "Early 2026",
+    "title": "The Fullstack Pivot",
+    "description": "Expanded my stack to modern frontend and DevOps. Certified in Responsive Web Design, Advanced JS, Docker, and Kubernetes."
+  },
+  {
+    "id": 4,
+    "date": "Future",
+    "title": "Ready to Build",
+    "description": "Seeking my first commercial role as a Junior Developer or Intern to bring my dedication, problem-solving mindset, and skills to a real-world development team."
+  }
+]

@@ -20,3 +20,62 @@ a {
 }
 
 ul { list-style: none; }
+
+/* Custom Scrollbar (Chrome, Safari, Edge) */
+
+/* 1. The width of the entire scroll bar */
+::-webkit-scrollbar { width: 12px; }
+
+/* 2. The background of the track on which the slider moves */
+::-webkit-scrollbar-track { background: var(--bg-main); }
+
+/* 3. Thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        to bottom, 
+        rgba(255, 204, 0, 0) 0%,
+        rgba(255, 204, 0, 0.1) 5%,
+        var(--accent-color) 25%,
+        var(--accent-color) 75%,
+        rgba(255, 204, 0, 0.1) 95%,
+        rgba(255, 204, 0, 0) 100%
+    );
+    border-radius: 10px;
+    border: 3px solid var(--bg-main);
+    background-clip: padding-box;
+}
+
+/* Slider hover effect */
+::-webkit-scrollbar-thumb:hover { 
+    background: linear-gradient(
+        to bottom, 
+        rgba(255, 204, 0, 0) 0%, 
+        rgba(255, 224, 102, 0.2) 5%, 
+        #ffe066 25%,
+        #ffe066 75%, 
+        rgba(255, 224, 102, 0.2) 95%, 
+        rgba(255, 204, 0, 0) 100%
+    );
+    border: 3px solid var(--bg-main);
+    background-clip: padding-box;
+}
+
+/* Firefox Support */
+@supports (-moz-appearance: none) {
+    html {
+        scrollbar-width: auto;
+        scrollbar-color: var(--accent-color) var(--bg-main);
+    }
+}
+
+/* Custom Text Selection */
+::selection {
+    background-color: var(--accent-color);
+    color: var(--bg-main);
+}
+
+/* Fallback for Firefox */
+::-moz-selection {
+    background-color: var(--accent-color);
+    color: var(--bg-main);
+}

@@ -1,9 +1,9 @@
 /* Global, blurred yellow glow in the page background */
 .ambient-glow {
-    position: absolute;
+    position: fixed;
     width: 50vw;
     height: 50vh;
-    background: radial-gradient(circle, rgba(255, 204, 0, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.06) 30%, transparent 70%);
     filter: blur(100px);
     z-index: -1;
     pointer-events: none;
@@ -31,4 +31,47 @@
     transform: translateY(-8px);
     border-color: rgba(255, 204, 0, 0.4);
     box-shadow: 0 15px 40px rgba(255, 204, 0, 0.08);
+}
+
+/* Cursor Tracking Glow */
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.08) 0%, transparent 50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease, width 0.4s ease, height 0.4s ease;
+    opacity: 0;
+}
+
+.cursor-glow.hidden {
+    opacity: 0 !important;
+    width: 200px;
+    height: 200px;
+}
+
+/* Global Shine Effect */
+.glass-shine {
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.06), transparent);
+    transform: skewX(-20deg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* We trigger an animation when hovering over any glass tile */
+.skill-item:hover .glass-shine, .cert-card:hover .glass-shine, .contact-card:hover .glass-shine { animation: shine-effect 0.7s forwards; }
+
+@keyframes shine-effect {
+    0% { left: -150%; }
+    100% { left: 200%; }
 }

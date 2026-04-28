@@ -9,15 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/mobile.css">
 </head>
 <body>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
     <header class="navbar">
         <div class="container navbar-container">
             <nav class="nav-links" id="nav-links">
                 <div class="nav-pill" id="nav-pill"></div>
                 
-                <a href="#hero" class="active">About Me</a>
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#certs">Certs</a>
@@ -31,7 +36,6 @@
         <div class="ambient-glow glow-1"></div>
         <div class="ambient-glow glow-2"></div>
         <div class="ambient-glow glow-3"></div>
-        <div class="ambient-glow glow-4"></div>
 
         <section id="hero" class="section-hero">
             <div class="container hero-container">
@@ -40,12 +44,13 @@
                 </div>
 
                 <div class="hero-content">
-                    <span class="badge">Available for new projects</span>
+                    <span class="badge">Seeking Junior / Internship Roles</span>
                     
                     <h1 class="hero-title">Hello, I'm <span class="highlight">Kacper Gumulak</span></h1>
                     
                     <p class="hero-subtitle">
-                        A .NET Fullstack Developer specializing in building high-performance applications with precision and modern aesthetics.
+                        A Computer Science student and aspiring <strong>.NET Fullstack Developer</strong>. 
+                        I bridge the gap between robust backend architecture and modern web interfaces to build complete, scalable applications.
                     </p>
                     
                     <div class="hero-actions">
@@ -58,13 +63,36 @@
             </div>
         </section>
 
+        <section id="about" class="section-about">
+            <div class="container about-container">
+                <div class="about-content">
+                    <span class="badge">My Story</span>
+                    <h2 class="section-title">Beyond the <span class="highlight">Code.</span></h2>
+                    
+                    <div class="about-text-blocks">
+                        <p>
+                            I am a Computer Science student at Cracow University of Technology, deeply passionate about building scalable software. My core expertise lies in the <strong>.NET ecosystem (C#)</strong>, combined with solid skills in <strong>SQL databases</strong> and navigating both Windows and Linux (WSL) environments.
+                        </p>
+                        <p>
+                            My professional background as a Customer Advisor taught me the art of clear communication and rapid problem-solving. I leverage these soft skills daily to translate complex technical requirements into user-friendly solutions.
+                        </p>
+                        <p>
+                            While I gained valuable academic experience exploring Java (building a Hotel API and a 2D game), my dedicated path is <strong>Fullstack .NET development</strong>. I focus on creating robust REST APIs-rigorously verified with <span class="highlight">Postman</span>-and designing clean, responsive web interfaces.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-timeline" id="timeline-grid"></div>
+            </div>
+        </section>
+
         <section id="skills" class="section-skills">
             <div class="container skills-container">
                 <div class="skills-content">
                     <span class="badge">My Tech Stack</span>
-                    <h2 class="section-title">Obsessed with the <span class="highlight">Details.</span></h2>
+                    <h2 class="section-title">Tools of the <span class="highlight">Trade.</span></h2>
                     <p class="section-subtitle">
-                        Leveraging modern technologies to build scalable backend systems and seamless user experiences.
+                        From database design to responsive web interfaces, I utilize a modern and versatile toolset. I focus on clean architectural patterns (like MVVM and MVC) and containerized deployments using Docker to ensure reliable, cross-platform performance.
                     </p>
                 </div>
 
@@ -89,15 +117,17 @@
                     <span class="badge">Continuous Learning</span>
                     <h2 class="section-title">My <span class="highlight">Certifications.</span></h2>
                 </div>
-                <div id="certs-grid" class="certs-grid"></div> </div>
+                
+                <div id="certs-grid" class="certs-grid"></div>
+            </div>
         </section>
 
         <footer id="contact" class="section-footer">
             <div class="container">
-                
                 <div class="contact-card">
+                    <div class="glass-shine"></div>
+
                     <span class="badge">Ready to start?</span>
-                    
                     <h2 class="contact-title">Let's build something<br><span class="highlight">exceptional</span> together.</h2>
                 </div>
 

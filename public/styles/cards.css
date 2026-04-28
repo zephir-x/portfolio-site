@@ -47,10 +47,14 @@
 .project-graphic {
     width: 100%;
     display: block;
-    transition: transform 0.4s ease;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 
-.project-card:hover .project-graphic { transform: scale(1.03); }
+.project-card:hover .project-graphic { 
+    transform: scale(1.03); 
+    filter: grayscale(0%);
+}
 
 .project-details {
     padding: 30px 40px;
