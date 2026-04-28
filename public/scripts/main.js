@@ -157,7 +157,7 @@ function renderProjects(projects) {
     grid.innerHTML = projects.map(project => `
         <article class="project-card">
             <div class="project-graphic-wrapper">
-                <img src="${project.imageUrl}" alt="${project.title} screenshot" class="project-graphic">
+                <img src="${project.imageUrl}" alt="${project.title} screenshot" class="project-graphic" loading="lazy">
             </div>
 
             <div class="project-details">
