@@ -1,20 +1,18 @@
 .section-certs { position: relative; }
 
 .certs-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    position: relative;
-    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
 }
 
 /* Cert Cards */
 .cert-card {
+    flex: 0 1 350px;
+    min-width: 300px;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 260px;
 }
 
 /* Background watermark icon */

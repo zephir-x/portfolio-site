@@ -126,8 +126,32 @@
         text-align: center;
     }
 
-    .about-timeline { padding-left: 20px; }
+    .about-timeline, .timeline { 
+        padding-left: 0; 
+        margin-left: 0;
+    }
 
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 50px;
+    }
+
+    .timeline::before {
+        left: 15px; 
+        transform: translateX(-50%);
+    }
+
+    .timeline-dot {
+        left: 12px; 
+        transform: translateX(-50%);
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    
     .timeline-card { padding: 20px; }
 
     /* 6. Skills Section */

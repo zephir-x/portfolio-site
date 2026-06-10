@@ -9,16 +9,22 @@
     "id": 2,
     "date": "2024 - 2025",
     "title": "Backend & Architecture",
-    "description": "Deep dive into the .NET ecosystem. Built desktop apps (WPF/MVVM) and developed ASP.NET Core REST APIs, using Postman for endpoint testing. Also explored Java through academic projects."
+    "description": "Deep dive into the .NET ecosystem. Built desktop apps (WPF/MVVM) and developed ASP.NET Core REST APIs with Entity Framework Core, using Postman for endpoint testing."
   },
   {
     "id": 3,
     "date": "Early 2026",
-    "title": "The Fullstack Pivot",
-    "description": "Expanded my stack to modern frontend and DevOps. Certified in Responsive Web Design, Advanced JS, Docker, and Kubernetes."
+    "title": "DevOps & JS Fundamentals",
+    "description": "Expanded my knowledge toward web deployment and scripting. Certified in Docker containerization, Git version control, and built solid JavaScript foundations."
   },
   {
     "id": 4,
+    "date": "Mid 2026",
+    "title": "The Modern Frontend & AI Pivot",
+    "description": "Dove into TypeScript, React, and Next.js to complete my Fullstack skill set. Earned Google certification in AI Workflows & Prompt Engineering, integrating AI tools to streamline daily development."
+  },
+  {
+    "id": 5,
     "date": "Future",
     "title": "Ready to Build",
     "description": "Seeking my first commercial role as a Junior Developer or Intern to bring my dedication, problem-solving mindset, and skills to a real-world development team."

@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "name": "C# & .NET 8",
+    "name": "C# & .NET 8/9",
     "icon": "fa-brands fa-microsoft"
   },
   {
     "id": 2,
-    "name": "ASP.NET & Web API",
+    "name": "ASP.NET Core REST API",
     "icon": "fa-solid fa-server"
   },
   {
     "id": 3,
-    "name": "JavaScript",
-    "icon": "fa-brands fa-js"
+    "name": "React.js & Next.js",
+    "icon": "fa-brands fa-react"
   },
   {
     "id": 4,
-    "name": "HTML5 & CSS3",
-    "icon": "fa-brands fa-html5"
+    "name": "TypeScript & JavaScript",
+    "icon": "fa-brands fa-js"
   },
   {
     "id": 5,
@@ -26,16 +26,26 @@
   },
   {
     "id": 6,
-    "name": "Docker & Kubernetes",
+    "name": "Docker & Linux (WSL)",
     "icon": "fa-brands fa-docker"
   },
   {
     "id": 7,
-    "name": "Git & GitHub",
-    "icon": "fa-brands fa-git-alt"
+    "name": "Tailwind CSS & Vite",
+    "icon": "fa-brands fa-css3-alt"
   },
   {
     "id": 8,
+    "name": "Git, GitHub & CI/CD",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "id": 9,
+    "name": "AI Tools & Prompt Engineering",
+    "icon": "fa-solid fa-robot"
+  },
+  {
+    "id": 10,
     "name": "WPF & MVVM (Desktop)",
     "icon": "fa-solid fa-desktop"
   }
