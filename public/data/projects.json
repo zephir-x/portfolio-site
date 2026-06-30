@@ -2,31 +2,31 @@
   {
     "id": 1,
     "title": "GymCore",
-    "description": "Currently architecting a E2E / SaaS platform for gyms.",
-    "imageUrl": "/assets/images/placeholder.jpg",
-    "tags": ["C#", "ASP.NET Core", "EF Core", "PostgreSQL", "Tailwind", "TypeScript", "React", "Docker"],
+    "description": "A comprehensive, highly-concurrent SaaS platform built for boutique fitness clubs. Features Clean Architecture, CQRS, Stripe API integrations, and optimistic concurrency control.",
+    "imageUrl": "/assets/images/gymcore.jpg",
+    "tags": [".NET 9", "React", "TypeScript", "CQRS", "PostgreSQL", "Docker", "Stripe API"],
     "githubUrl": "https://github.com/zephir-x/gymcore"
   },
   {
     "id": 2,
-    "title": "Game Store",
-    "description": "GameNest - Digital Game Distribution Platform.",
-    "imageUrl": "/assets/images/game-store.jpg",
-    "tags": ["PostgreSQL", "Docker", "JavaScript", "HTML5", "CSS3"],
-    "githubUrl": "https://github.com/zephir-x/game-store"
-  },
-  {
-    "id": 3,
     "title": "Portfolio Site",
-    "description": "My own portfolio site.",
+    "description": "A decoupled, framework-less interactive portfolio powered by Vanilla JS, JSON, and fully containerized with Docker.",
     "imageUrl": "/assets/images/portfolio-site.jpg",
     "tags": ["Docker", "JavaScript", "HTML5", "CSS3", "JSON"],
     "githubUrl": "https://github.com/zephir-x/portfolio-site"
   },
   {
+    "id": 3,
+    "title": "GameNest",
+    "description": "Digital Game Distribution Platform built from scratch using a custom MVC architecture and Object-Oriented Programming.",
+    "imageUrl": "/assets/images/game-store.jpg",
+    "tags": ["Pure PHP", "PostgreSQL", "Docker", "JavaScript", "HTML5", "CSS3", "MVC"],
+    "githubUrl": "https://github.com/zephir-x/game-store"
+  },
+  {
     "id": 4,
     "title": "Finance Tracker",
-    "description": "Desktop finance management app.",
+    "description": "Desktop personal finance management app utilizing data-binding concepts and local storage.",
     "imageUrl": "/assets/images/finance-tracker.jpg",
     "tags": ["C#", ".NET 8", "WPF", "SQLite", "MVVM"],
     "githubUrl": "https://github.com/zephir-x/finance-tracker"

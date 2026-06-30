@@ -1,51 +1,61 @@
 [
   {
     "id": 1,
-    "name": "C# & .NET 8/9",
+    "name": "C# & .NET 9",
     "icon": "fa-brands fa-microsoft"
   },
   {
     "id": 2,
-    "name": "ASP.NET Core REST API",
+    "name": "ASP.NET Core & EF Core",
     "icon": "fa-solid fa-server"
   },
   {
     "id": 3,
-    "name": "React.js & Next.js",
-    "icon": "fa-brands fa-react"
+    "name": "Clean Architecture & CQRS",
+    "icon": "fa-solid fa-sitemap"
   },
   {
     "id": 4,
-    "name": "TypeScript & JavaScript",
-    "icon": "fa-brands fa-js"
+    "name": "React.js & TypeScript",
+    "icon": "fa-brands fa-react"
   },
   {
     "id": 5,
-    "name": "SQL & EF Core",
-    "icon": "fa-solid fa-database"
+    "name": "React Query & Vite",
+    "icon": "fa-brands fa-js"
   },
   {
     "id": 6,
-    "name": "Docker & Linux (WSL)",
-    "icon": "fa-brands fa-docker"
+    "name": "PostgreSQL & SQLite",
+    "icon": "fa-solid fa-database"
   },
   {
     "id": 7,
-    "name": "Tailwind CSS & Vite",
-    "icon": "fa-brands fa-css3-alt"
+    "name": "Docker & Nginx (Proxy)",
+    "icon": "fa-brands fa-docker"
   },
   {
     "id": 8,
+    "name": "REST APIs & Webhooks",
+    "icon": "fa-solid fa-cloud"
+  },
+  {
+    "id": 9,
+    "name": "Tailwind CSS & HTML5",
+    "icon": "fa-brands fa-css3-alt"
+  },
+  {
+    "id": 10,
     "name": "Git, GitHub & CI/CD",
     "icon": "fa-brands fa-github"
   },
   {
-    "id": 9,
-    "name": "AI Tools & Prompt Engineering",
+    "id": 11,
+    "name": "AI Tools & Prompting",
     "icon": "fa-solid fa-robot"
   },
   {
-    "id": 10,
+    "id": 12,
     "name": "WPF & MVVM (Desktop)",
     "icon": "fa-solid fa-desktop"
   }
