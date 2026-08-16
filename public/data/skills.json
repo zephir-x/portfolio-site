@@ -16,46 +16,56 @@
   },
   {
     "id": 4,
+    "name": "Microsoft Azure & Services",
+    "icon": "fa-solid fa-cloud-arrow-up"
+  },
+  {
+    "id": 5,
+    "name": "Terraform (IaC) & CI/CD",
+    "icon": "fa-solid fa-code-branch"
+  },
+  {
+    "id": 6,
+    "name": "Docker & Containerization",
+    "icon": "fa-brands fa-docker"
+  },
+  {
+    "id": 7,
     "name": "React.js & TypeScript",
     "icon": "fa-brands fa-react"
   },
   {
-    "id": 5,
+    "id": 8,
     "name": "React Query & Vite",
     "icon": "fa-brands fa-js"
   },
   {
-    "id": 6,
+    "id": 9,
     "name": "PostgreSQL & SQLite",
     "icon": "fa-solid fa-database"
   },
   {
-    "id": 7,
-    "name": "Docker & Nginx (Proxy)",
-    "icon": "fa-brands fa-docker"
-  },
-  {
-    "id": 8,
-    "name": "REST APIs & Webhooks",
-    "icon": "fa-solid fa-cloud"
-  },
-  {
-    "id": 9,
-    "name": "Tailwind CSS & HTML5",
-    "icon": "fa-brands fa-css3-alt"
-  },
-  {
     "id": 10,
-    "name": "Git, GitHub & CI/CD",
+    "name": "Git & GitHub Actions",
     "icon": "fa-brands fa-github"
   },
   {
     "id": 11,
+    "name": "Tailwind CSS & HTML5",
+    "icon": "fa-brands fa-css3-alt"
+  },
+  {
+    "id": 12,
     "name": "AI Tools & Prompting",
     "icon": "fa-solid fa-robot"
   },
   {
-    "id": 12,
+    "id": 13,
+    "name": "REST APIs & Webhooks",
+    "icon": "fa-solid fa-network-wired"
+  },
+  {
+    "id": 14,
     "name": "WPF & MVVM (Desktop)",
     "icon": "fa-solid fa-desktop"
   }

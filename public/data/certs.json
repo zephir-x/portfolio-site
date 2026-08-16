@@ -1,6 +1,22 @@
 [
   {
     "id": 1,
+    "title": "Terraform 101: The Ultimate Hands-On Guide [Azure Edition]",
+    "issuer": "Udemy",
+    "date": "Issued: Aug 2026",
+    "icon": "fa-solid fa-cubes",
+    "verifyUrl": "https://www.udemy.com/certificate/UC-648c31b3-ba97-46e9-948a-e909a9a83908/"
+  },
+  {
+    "id": 2,
+    "title": "Microsoft Applied Skills: Get started with Azure management tasks",
+    "issuer": "Microsoft",
+    "date": "Issued: Jul 2026",
+    "icon": "fa-brands fa-microsoft",
+    "verifyUrl": "https://learn.microsoft.com/en-us/users/kacpergumulak-4947/credentials/f975113b70b379fd?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+  },
+  {
+    "id": 3,
     "title": "Intermediate React",
     "issuer": "Frontend Masters",
     "date": "Issued: Jun 2026",
@@ -8,25 +24,23 @@
     "verifyUrl": "https://static.frontendmasters.com/ud/c/3b223bdf3b/dVjsrZPBjd/intermediate-react-v6-frontendmasters.pdf"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Umiejętności Jutra AI 3.0",
     "issuer": "Google",
     "date": "Issued: Jun 2026",
     "icon": "fa-brands fa-google",
     "verifyUrl": "https://cdn.umiejetnoscijutra.pl/certificates/6ff53eb4-1fc1-4adc-92fd-0a01df7c8590"
   },
-  
   {
-    "id": 3,
+    "id": 5,
     "title": "TypeScript: From First Steps to Professional",
     "issuer": "Frontend Masters",
     "date": "Issued: Jun 2026",
     "icon": "fa-solid fa-code",
     "verifyUrl": "https://static.frontendmasters.com/ud/c/3b223bdf3b/jfuxcgueUy/typescript-first-steps-frontendmasters.pdf"
   },
-  
   {
-    "id": 4,
+    "id": 6,
     "title": "SQL Associate",
     "issuer": "DataCamp",
     "date": "Issued: Apr 2026 & Expires: Apr 2028",
@@ -34,7 +48,7 @@
     "verifyUrl": "https://www.datacamp.com/certificate/SQA0010192603264"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Advanced JavaScript",
     "issuer": "Scrimba",
     "date": "Issued: Apr 2026",
@@ -42,7 +56,7 @@
     "verifyUrl": "https://scrimba.com/@zephir-x:certs;cert2ffentAFNn4SRV7vFni6aT9hK3ipPVAEJ2d7kqQX4XuT3x"
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "Responsive Web Design",
     "issuer": "freeCodeCamp",
     "date": "Issued: Mar 2026",
@@ -50,7 +64,7 @@
     "verifyUrl": "https://www.freecodecamp.org/certification/zephir/responsive-web-design-v9"
   },
   {
-    "id": 7,
+    "id": 9,
     "title": "Containerization and Virtualization with Docker & Kubernetes",
     "issuer": "DataCamp",
     "date": "Issued: Mar 2026",
@@ -58,7 +72,7 @@
     "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/e94095558cea0c8d5749b3f50c2bfc79164fce75?raw=1"
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "Github Foundations",
     "issuer": "DataCamp",
     "date": "Issued: Mar 2026",
@@ -66,7 +80,7 @@
     "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/b0f068be8a23f3839d1cd413494b5a4ed5c91dec?raw=1"
   },
   {
-    "id": 9,
+    "id": 11,
     "title": "Git Fundamentals",
     "issuer": "DataCamp",
     "date": "Issued: Mar 2026",
@@ -74,7 +88,7 @@
     "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/05b3363f073087f76806c4d37be17af79fa60812?raw=1#"
   },
   {
-    "id": 10,
+    "id": 12,
     "title": "C# .NET od Podstaw do Tworzenia Aplikacji w WPF i XAML",
     "issuer": "Udemy",
     "date": "Issued: Jan 2026",

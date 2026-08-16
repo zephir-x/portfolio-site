@@ -20,13 +20,19 @@
   {
     "id": 4,
     "date": "Mid 2026",
-    "title": "The Modern Frontend & AI Pivot",
-    "description": "Dove into TypeScript, React, Vite, and React Query to complete my Fullstack skill set. Earned Google certification in AI Workflows & Prompt Engineering, integrating AI tools to streamline daily development."
+    "title": "Commercial Web Development",
+    "description": "Started a Web Developer Internship at Allventures. Dove into TypeScript, React, and Vite to complete my Fullstack skill set while integrating AI tools to streamline daily coding routines."
   },
   {
     "id": 5,
+    "date": "Late 2026",
+    "title": "Cloud-Native & IaC Pivot",
+    "description": "Transitioned towards the 'You build it, you run it' philosophy. Mastered Terraform and Microsoft Azure, provisioning secure cloud architectures and automating CI/CD pipelines via GitHub Actions."
+  },
+  {
+    "id": 6,
     "date": "Future",
     "title": "Ready to Build",
-    "description": "Seeking my first commercial role as a Junior Developer or Intern to bring my dedication, problem-solving mindset, and skills to a real-world development team."
+    "description": "Seeking my first commercial role as a Junior Cloud/.NET Engineer to bring my dedication, robust infrastructure awareness, and skills to a real-world development team."
   }
 ]
