@@ -229,19 +229,16 @@ function initCursorGlow() {
         cursorGlow.style.top = `${e.clientY}px`;
     });
 
-    // Event listeners for interactive elements to hide the glow
+    // Event delegation for hover effects on interactive elements
     document.body.addEventListener('mouseover', (e) => {
-        // We check whether the element (or its parent) under the mouse matches the selector
         if (e.target.closest('a, button, .btn, .skill-item, .project-card, .cert-card, .contact-card, .navbar, .timeline-item, .hero-image')) {
-            cursorGlow.classList.add('hidden');
+            cursorGlow.classList.add('active');
         }
     });
 
     document.body.addEventListener('mouseout', (e) => {
-        // If we move the mouse away from an interactive element, we restore the glow
         if (e.target.closest('a, button, .btn, .skill-item, .project-card, .cert-card, .contact-card, .navbar, .timeline-item, .hero-image')) {
-            cursorGlow.classList.remove('hidden');
-            cursorGlow.style.opacity = '1'; 
+            cursorGlow.classList.remove('active');
         }
     });
 }

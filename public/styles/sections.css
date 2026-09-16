@@ -52,9 +52,12 @@
 .project-code-link {
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--accent-color);
+    color: var(--text-secondary);
     letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
+
+.project-code-link:hover { color: var(--accent-color); }
 
 /* Contact Section */
 .contact-title {

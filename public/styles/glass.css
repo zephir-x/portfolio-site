@@ -33,26 +33,45 @@
     box-shadow: 0 15px 40px rgba(255, 204, 0, 0.08);
 }
 
-/* Cursor Tracking Glow */
-.cursor-glow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255, 204, 0, 0.08) 0%, transparent 50%);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.4s ease, width 0.4s ease, height 0.4s ease;
-    opacity: 0;
+/* Custom Magnetic Cursor */
+*, *::before, *::after {
+    cursor: none !important;
 }
 
-.cursor-glow.hidden {
-    opacity: 0 !important;
-    width: 200px;
-    height: 200px;
+.cursor-glow {
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    animation: breathe 1.5s infinite alternate ease-in-out;
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Breathing animation */
+@keyframes breathe {
+    0% {
+        box-shadow: 0 0 10px 2px rgba(255, 204, 0, 0.2);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        box-shadow: 0 0 20px 5px rgba(255, 204, 0, 0.5);
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+/* Expanding into an interactive circle */
+.cursor-glow.active {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 204, 0, 0.1);
+    border: 2px solid var(--accent-color); 
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+    animation: none;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* Global Shine Effect */
