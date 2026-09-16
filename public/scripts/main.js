@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
     loadCerts();
     initCursorGlow();
+    initRevealAnimations();
 });
 
 function initNavbar() {
@@ -129,6 +130,8 @@ function renderSkills(skills) {
             <span class="skill-name">${skill.name}</span>
         </div>
     `).join('');
+
+    grid.querySelectorAll('.skill-item').forEach(initRevealElement);
 }
 
 async function loadProjects() {
@@ -177,6 +180,8 @@ function renderProjects(projects) {
             </div>
         </article>
     `).join('');
+
+    grid.querySelectorAll('.project-card').forEach(initRevealElement);
 }
 
 async function loadCerts() {
@@ -206,6 +211,8 @@ function renderCerts(data) {
             </a>
         </div>
     `).join('');
+
+    grid.querySelectorAll('.cert-card').forEach(initRevealElement);
 }
 
 function initCursorGlow() {
@@ -214,32 +221,28 @@ function initCursorGlow() {
 
     // Cursor tracking
     document.addEventListener('mousemove', (e) => {
-        // After the first mouse movement, we show the spot
         if (!cursorGlow.classList.contains('hidden')) {
             cursorGlow.style.opacity = '1';
         }
         
-        // We change the position using the client's coordinates (relative to the window, because position: fixed)
         cursorGlow.style.left = `${e.clientX}px`;
         cursorGlow.style.top = `${e.clientY}px`;
     });
 
-    // Turning off the spot when hovering over important elements - we select everything that is interactive or has its own background
-    const interactiveElements = document.querySelectorAll(`
-        a, button, .btn, 
-        .skill-item, .project-card, .cert-card, .contact-card,
-        .navbar
-    `);
-
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
+    // Event listeners for interactive elements to hide the glow
+    document.body.addEventListener('mouseover', (e) => {
+        // We check whether the element (or its parent) under the mouse matches the selector
+        if (e.target.closest('a, button, .btn, .skill-item, .project-card, .cert-card, .contact-card, .navbar, .timeline-item, .hero-image')) {
             cursorGlow.classList.add('hidden');
-        });
-        el.addEventListener('mouseleave', () => {
+        }
+    });
+
+    document.body.addEventListener('mouseout', (e) => {
+        // If we move the mouse away from an interactive element, we restore the glow
+        if (e.target.closest('a, button, .btn, .skill-item, .project-card, .cert-card, .contact-card, .navbar, .timeline-item, .hero-image')) {
             cursorGlow.classList.remove('hidden');
-            // We restore opacity immediately after scrolling down
             cursorGlow.style.opacity = '1'; 
-        });
+        }
     });
 }
 
@@ -265,4 +268,59 @@ function initScrollAnimations() {
     timelineItems.forEach(item => {
         timelineObserver.observe(item);
     });
+}
+
+/* Scroll Reveal Animation */
+const revealOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -30px 0px"
+};
+
+// Global observer instance for reveal animations
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+            entry.target.classList.remove('reveal-hidden-top', 'reveal-hidden-bottom');
+        } else {
+            entry.target.classList.remove('reveal-visible');
+            
+            if (entry.boundingClientRect.y < 0) {
+                entry.target.classList.add('reveal-hidden-top');
+                entry.target.classList.remove('reveal-hidden-bottom');
+            } else {
+                entry.target.classList.add('reveal-hidden-bottom');
+                entry.target.classList.remove('reveal-hidden-top');
+            }
+        }
+    });
+}, revealOptions);
+
+function initRevealElement(el) {
+    if (el.classList.contains('reveal-initialized')) return;
+    
+    el.classList.add('reveal-element', 'reveal-initialized');
+    
+    if (el.getBoundingClientRect().top > window.innerHeight) {
+        el.classList.add('reveal-hidden-bottom');
+    } else {
+        el.classList.add('reveal-visible');
+    }
+    
+    scrollObserver.observe(el);
+}
+
+// Called once on DOMContentLoaded
+function initRevealAnimations() {
+    const staticSelectors = [
+        '#hero .hero-content > *',
+        '#hero .hero-image-wrapper',
+        '#skills .skills-content > *',
+        '#projects .section-header > *',
+        '#certs .section-header > *',
+        '#contact .contact-card',
+        '#contact .footer-bottom'
+    ];
+
+    document.querySelectorAll(staticSelectors.join(', ')).forEach(initRevealElement);
 }

@@ -1,6 +1,22 @@
 [
   {
     "id": 1,
+    "title": "Code Reviewer",
+    "description": "Autonomous CI/CD code review agent that uses Google Gemini and Octokit to detect architecture, security, and performance issues in pull requests and publish native inline comments.",
+    "imageUrl": "/assets/images/code-reviewer.jpg",
+    "tags": [".NET 9", "C#", "Google Gemini", "GitHub Actions", "Octokit", "Polly"],
+    "githubUrl": "https://github.com/zephir-x/code-reviewer"
+  },
+  {
+    "id": 2,
+    "title": "Job Matcher",
+    "description": "Autonomous cloud-native recruitment agent that uses Google Gemini to evaluate job offers against a candidate profile and delivers curated matches to Discord.",
+    "imageUrl": "/assets/images/job-matcher.jpg",
+    "tags": [".NET 9", "C#", "Google Gemini", "GitHub Actions", "Discord", "REST APIs"],
+    "githubUrl": "https://github.com/zephir-x/job-matcher"
+  },
+  {
+    "id": 3,
     "title": "Azure Infra Hub",
     "description": "A centralized cloud management architecture provisioned via Terraform on Microsoft Azure. Features isolated VNETs, Zero Trust security with Managed Identities, and automated CI/CD deployments.",
     "imageUrl": "/assets/images/azure-hub.jpg",
@@ -8,7 +24,7 @@
     "githubUrl": "https://github.com/zephir-x/azure-infrastructure-hub"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "GymCore",
     "description": "A comprehensive, highly-concurrent SaaS platform built for boutique fitness clubs. Features Clean Architecture, CQRS, Stripe API integrations, and optimistic concurrency control.",
     "imageUrl": "/assets/images/gymcore.jpg",
@@ -16,7 +32,7 @@
     "githubUrl": "https://github.com/zephir-x/gymcore"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Portfolio Site",
     "description": "A decoupled, framework-less interactive portfolio powered by Vanilla JS, JSON, and fully containerized with Docker.",
     "imageUrl": "/assets/images/portfolio-site.jpg",
@@ -24,7 +40,7 @@
     "githubUrl": "https://github.com/zephir-x/portfolio-site"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "GameNest",
     "description": "Digital Game Distribution Platform built from scratch using a custom MVC architecture and Object-Oriented Programming.",
     "imageUrl": "/assets/images/game-store.jpg",
@@ -32,7 +48,7 @@
     "githubUrl": "https://github.com/zephir-x/game-store"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Finance Tracker",
     "description": "Desktop personal finance management app utilizing data-binding concepts and local storage.",
     "imageUrl": "/assets/images/finance-tracker.jpg",
@@ -40,7 +56,7 @@
     "githubUrl": "https://github.com/zephir-x/finance-tracker"
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "Hotel API",
     "description": "RESTful API for a hotel reservation management system.",
     "imageUrl": "/assets/images/hotel-api.jpg",
