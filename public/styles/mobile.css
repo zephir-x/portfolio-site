@@ -209,6 +209,11 @@
     /* 9. Contact & Footer */
     .contact-card { padding: 50px 20px; }
 
+    .contact-card::before {
+        width: 120%;
+        height: 120%;
+    }
+
     .contact-title { font-size: 2.2rem; }
 
     .footer-bottom {

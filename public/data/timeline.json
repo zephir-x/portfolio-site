@@ -26,8 +26,8 @@
   {
     "id": 5,
     "date": "Late 2026",
-    "title": "Cloud-Native & IaC Pivot",
-    "description": "Transitioned towards the 'You build it, you run it' philosophy. Mastered Terraform and Microsoft Azure, provisioning secure cloud architectures and automating CI/CD pipelines via GitHub Actions."
+    "title": "Enterprise & Cloud Pivot",
+    "description": "Transitioned towards the 'You build it, you run it' philosophy and complex enterprise systems. Mastered Terraform, SignalR, and strict Domain-Driven Design (DDD) to build real-time, scalable applications."
   },
   {
     "id": 6,

@@ -11,61 +11,71 @@
   },
   {
     "id": 3,
-    "name": "Clean Architecture & CQRS",
+    "name": "Clean Architecture & MediatR",
     "icon": "fa-solid fa-sitemap"
   },
   {
     "id": 4,
-    "name": "Microsoft Azure & Services",
-    "icon": "fa-solid fa-cloud-arrow-up"
+    "name": "Domain-Driven Design (DDD)",
+    "icon": "fa-solid fa-cubes"
   },
   {
     "id": 5,
-    "name": "Terraform (IaC) & CI/CD",
-    "icon": "fa-solid fa-code-branch"
+    "name": "Microsoft Azure & Terraform (IaC)",
+    "icon": "fa-solid fa-cloud-arrow-up"
   },
   {
     "id": 6,
-    "name": "Docker & Containerization",
-    "icon": "fa-brands fa-docker"
+    "name": "Docker & CI/CD",
+    "icon": "fa-solid fa-code-branch"
   },
   {
     "id": 7,
-    "name": "React.js & TypeScript",
+    "name": "React 19 & TypeScript",
     "icon": "fa-brands fa-react"
   },
   {
     "id": 8,
+    "name": "SignalR & WebSockets",
+    "icon": "fa-solid fa-tower-broadcast"
+  },
+  {
+    "id": 9,
     "name": "React Query & Vite",
     "icon": "fa-brands fa-js"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "PostgreSQL & SQLite",
     "icon": "fa-solid fa-database"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Git & GitHub Actions",
     "icon": "fa-brands fa-github"
   },
   {
-    "id": 11,
+    "id": 12,
+    "name": "TDD (xUnit & Moq)",
+    "icon": "fa-solid fa-vial"
+  },
+  {
+    "id": 13,
     "name": "Tailwind CSS & HTML5",
     "icon": "fa-brands fa-css3-alt"
   },
   {
-    "id": 12,
+    "id": 14,
     "name": "AI Tools & Prompting",
     "icon": "fa-solid fa-robot"
   },
   {
-    "id": 13,
+    "id": 15,
     "name": "REST APIs & Webhooks",
     "icon": "fa-solid fa-network-wired"
   },
   {
-    "id": 14,
+    "id": 16,
     "name": "WPF & MVVM (Desktop)",
     "icon": "fa-solid fa-desktop"
   }
