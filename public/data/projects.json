@@ -1,6 +1,28 @@
 [
   {
     "id": 1,
+    "title": "Kraków360",
+    "description": {
+      "en": "Smart City decision-support platform and 15-Minute City simulator integrating 52 municipal open datasets across 18 districts. Features a .NET 9 Minimal API with Clean Architecture, React 19 cartography (Leaflet), a Python GIS/econometric ETL pipeline, and a RAG-grounded AI assistant (DeepSeek V3).",
+      "pl": "Platforma wspomagania decyzji Smart City i symulator Miasta 15-minutowego integrujący 52 miejskie zbiory otwartych danych dla 18 dzielnic. Wykorzystuje .NET 9 Minimal API (Clean Architecture), kartografię w React 19 (Leaflet), potok ETL/GIS w Pythonie oraz asystenta AI opartego o RAG (DeepSeek V3)."
+    },
+    "imageUrl": "/assets/images/cracow360.png",
+    "tags": ["C# 13 / .NET 9", "React 19 & TS", "Python GIS / ETL", "Clean Architecture", "Leaflet & GeoJSON", "DeepSeek AI (RAG)", "SQLite & EF Core 9", "Docker & CI/CD"],
+    "githubUrl": "https://github.com/zephir-x/cracow360"
+  },
+  {
+    "id": 2,
+    "title": "VPS Edge Infra",
+    "description": {
+      "en": "Production multi-project PaaS infrastructure orchestrating 13 containers (4 web platforms, 3 PostgreSQL engines, SQLite, and a custom L4 TCP game relay) within a strict 9.8 GB storage ceiling. Powered by Cloudflare IPv6 Edge, Nginx L7 Reverse Proxy, UFW hardening, and Zero-Build GHCR workflows.",
+      "pl": "Produkcyjna infrastruktura PaaS orkiestrująca 13 kontenerów (4 platformy webowe, 3 bazy PostgreSQL, SQLite oraz autorski przekaźnik L4 TCP) w rygorystycznym limicie 9.8 GB dysku. Oparta o Cloudflare IPv6 Edge, Nginx L7 Reverse Proxy, hardening UFW oraz potoki Zero-Build GHCR."
+    },
+    "imageUrl": "/assets/images/vps-infra.png",
+    "tags": ["Docker Compose", "Nginx Reverse Proxy", "Linux VPS & UFW", "Cloudflare IPv6", "GitHub Actions (GHCR)", ".NET & Postgres Tuning", "Security Hardening"],
+    "githubUrl": "https://github.com/zephir-x/vps-edge-infrastructure"
+  },
+  {
+    "id": 3,
     "title": "ProjectHub",
     "description": {
       "en": "Enterprise-grade Agile management platform featuring a real-time reactive Kanban board. Built with strict Clean Architecture, two-tier Role-Based Access Control (RBAC), an in-process MediatR event bus, and EF Core Soft Delete. Fully containerized and deployed via automated CI/CD to a Multi-Tenant Linux VPS.",
@@ -11,18 +33,18 @@
     "githubUrl": "https://github.com/zephir-x/pk-ztpai/tree/main/project"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "2D Billiards",
     "description": {
       "en": "A custom-built, deterministic 2D physics billiards engine with real-time 1v1 online multiplayer. Features strict Domain-Driven Design (DDD), a proprietary 480Hz collision resolver, an authoritative host network model with a dedicated Docker relay server, and 100% automated test coverage.",
       "pl": "Autorski, deterministyczny silnik fizyki bilarda 2D z trybem multiplayer 1v1 w czasie rzeczywistym. Wykorzystuje restrykcyjne DDD, własny resolver kolizji 480Hz, autorytatywny model sieciowy oparty na serwerze przekaźnikowym w Dockerze i posiada 100% pokrycie testami."
     },
     "imageUrl": "/assets/images/billiards.png",
-    "tags": ["C# 13", ".NET 9", "Multiplayer (TCP Relay)", "Docker", "Raylib-cs", "Domain-Driven-Design", "Physics Simulation","Agentic-Driven", "xUnit", "Clean Architecture"],
+    "tags": ["C# 13", ".NET 9", "Multiplayer (TCP Relay)", "Docker", "Raylib-cs", "Domain-Driven-Design", "Physics Simulation", "Agentic-Driven", "xUnit", "Clean Architecture"],
     "githubUrl": "https://github.com/zephir-x/billards-game"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Code Reviewer",
     "description": {
       "en": "Autonomous CI/CD code review agent that uses Google Gemini and Octokit to detect architecture, security, and performance issues in pull requests and publish native inline comments.",
@@ -33,7 +55,7 @@
     "githubUrl": "https://github.com/zephir-x/code-reviewer"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "Job Matcher",
     "description": {
       "en": "Autonomous cloud-native recruitment agent that uses Google Gemini to evaluate job offers against a candidate profile and delivers curated matches to Discord.",
@@ -44,7 +66,7 @@
     "githubUrl": "https://github.com/zephir-x/job-matcher"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Azure Infra Hub",
     "description": {
       "en": "A centralized cloud management architecture provisioned via Terraform on Microsoft Azure. Features isolated VNETs, Zero Trust security with Managed Identities, and automated CI/CD deployments.",
@@ -55,7 +77,7 @@
     "githubUrl": "https://github.com/zephir-x/azure-infrastructure-hub"
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "GymCore",
     "description": {
       "en": "A comprehensive, highly-concurrent SaaS platform built for boutique fitness clubs. Features Clean Architecture, CQRS, Stripe API integrations, and optimistic concurrency control.",
@@ -66,7 +88,7 @@
     "githubUrl": "https://github.com/zephir-x/gymcore"
   },
   {
-    "id": 7,
+    "id": 9,
     "title": "Portfolio Site",
     "description": {
       "en": "A decoupled, framework-less interactive portfolio powered by Vanilla JS, JSON, and fully containerized with Docker.",
@@ -77,7 +99,7 @@
     "githubUrl": "https://github.com/zephir-x/portfolio-site"
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "GameNest",
     "description": {
       "en": "Digital Game Distribution Platform built from scratch using a custom MVC architecture and Object-Oriented Programming.",
@@ -88,7 +110,7 @@
     "githubUrl": "https://github.com/zephir-x/game-store"
   },
   {
-    "id": 9,
+    "id": 11,
     "title": "Finance Tracker",
     "description": {
       "en": "Desktop personal finance management app utilizing data-binding concepts and local storage.",
@@ -99,7 +121,7 @@
     "githubUrl": "https://github.com/zephir-x/finance-tracker"
   },
   {
-    "id": 10,
+    "id": 12,
     "title": "Hotel API",
     "description": {
       "en": "RESTful API for a hotel reservation management system.",
