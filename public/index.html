@@ -27,21 +27,31 @@
             <nav class="nav-links" id="nav-links">
                 <div class="nav-pill" id="nav-pill"></div>
                 
-                <a href="#hero" class="active">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#certs">Certs</a>
-                <a href="#contact">Contact</a>
+                <a href="#hero" class="active" data-i18n="nav.home">Home</a>
+                <a href="#about" data-i18n="nav.about">About Me</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" data-i18n="nav.projects">Projects</a>
+                <a href="#certs" data-i18n="nav.certs">Certs</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
             </nav>
-            <a href="/assets/resume/IT-DEV-ENG-V1.pdf" class="btn btn-primary" target="_blank">DOWNLOAD CV</a>
+
+            <div class="nav-actions">
+                <div class="glass-lang-switch" id="lang-switcher">
+                    <div class="switch-indicator" id="lang-indicator"></div>
+                    <button class="switch-btn active" data-lang="en">EN</button>
+                    <button class="switch-btn" data-lang="pl">PL</button>
+                </div>
+                
+                <a href="/assets/resume/IT-DEV-ENG-V1.pdf" class="btn btn-primary" target="_blank">
+                    <span class="cv-desktop" data-i18n="nav.downloadCv">DOWNLOAD CV</span>
+                    <span class="cv-mobile">CV</span>
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="ambient-glow glow-1"></div>
-        <div class="ambient-glow glow-2"></div>
-        <div class="ambient-glow glow-3"></div>
+        <div class="milky-way-bg"></div>
 
         <section id="hero" class="section-hero">
             <div class="container hero-container">
@@ -50,20 +60,20 @@
                 </div>
 
                 <div class="hero-content">
-                    <span class="badge">Seeking Junior / Internship Roles</span>
+                    <span class="badge" data-i18n="hero.badge">Seeking Junior / Internship Roles</span>
                     
-                    <h1 class="hero-title">Hello, I'm <span class="highlight"></br>Kacper Gumulak</span></h1>
+                    <h1 class="hero-title" data-i18n="hero.title">Hello, I'm <span class="highlight"><br>Kacper Gumulak</span></h1>
                     
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
                         A Computer Science student and <strong>Software Engineer</strong>. 
                         I bridge the gap between robust C#/.NET backends, dynamic React interfaces, and modern Cloud-Native architectures to build scalable, end-to-end applications.
                     </p>
                     
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">
                             View My Projects <i class="fa-solid fa-arrow-right ml-8"></i>
                         </a>
-                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="hero.btnTalk">Let's Talk</a>
                     </div>
                 </div>
             </div>
@@ -72,18 +82,18 @@
         <section id="about" class="section-about">
             <div class="container about-container">
                 <div class="about-content">
-                    <span class="badge">My Story</span>
-                    <h2 class="section-title">Beyond the <span class="highlight">Code.</span></h2>
+                    <span class="badge" data-i18n="about.badge">My Story</span>
+                    <h2 class="section-title" data-i18n="about.title">Beyond the <span class="highlight">Code.</span></h2>
                     
                     <div class="about-text-blocks">
-                        <p>
-                            I am a Computer Science student at Cracow University of Technology, specializing in <strong>.NET backend development</strong> and <strong>Cloud-Native architecture</strong>. While I actively build responsive full-stack applications using React and TypeScript, I focus heavily on the entire software lifecycle.
+                        <p data-i18n="about.p1">
+                            I am a Computer Science student at Cracow University of Technology with a highly pragmatic approach to problem-solving. I view software engineering not just as writing syntax, but as designing reliable systems that deliver tangible value. I take ownership of my work, thriving on the challenge of transforming complex business requirements into logical, well-structured architectures.
                         </p>
-                        <p>
-                            I believe that writing good code is only half the job; running, scaling, and automating it is the other. My strongest areas are backend architecture (C#), relational databases, and cloud infrastructure. I enjoy taking an application from the initial database schema to building scalable Web APIs, and finally automating its deployment using <strong>Terraform</strong> and <strong>Microsoft Azure</strong>.
+                        <p data-i18n="about.p2">
+                            My professional journey didn't start in an IDE. Years of experience in customer service forged one of my strongest assets: communication. I learned how to listen actively, de-escalate stressful situations, and translate complex technical jargon into <span class="highlight">clear, user-friendly language</span>. I build for people, not just for machines.
                         </p>
-                        <p>
-                            Before transitioning into software engineering, I gained solid experience in professional customer service. This background taught me the art of clear communication, allowing me to troubleshoot on the fly and translate complex technical jargon into <span class="highlight">user-friendly solutions</span>.
+                        <p data-i18n="about.p3">
+                            My drive to learn and optimize extends beyond traditional programming. I actively leverage AI tools and prompt engineering to streamline my daily workflows and accelerate development. When I step away from the keyboard to maintain a healthy balance, you'll find me out on running trails, hitting the gym, exploring new tech trends, or practicing my Spanish.
                         </p>
                     </div>
                 </div>
@@ -95,17 +105,17 @@
         <section id="skills" class="section-skills">
             <div class="container skills-container">
                 <div class="skills-content">
-                    <span class="badge">My Tech Stack</span>
-                    <h2 class="section-title">Tools of the <span class="highlight">Trade.</span></h2>
+                    <span class="badge" data-i18n="skills.badge">My Tech Stack</span>
+                    <h2 class="section-title" data-i18n="skills.title">Tools of the <span class="highlight">Trade.</span></h2>
                     
                     <div class="section-subtitle-wrapper">
-                        <p class="section-subtitle">
+                        <p class="section-subtitle" data-i18n="skills.p1">
                             From database design to automated cloud provisioning, I utilize a modern and versatile toolset. I focus on strict backend principles like <strong>Clean Architecture</strong> and <strong>MediatR</strong>, combined with Infrastructure as Code (Terraform) and serverless deployments (Azure) to ensure highly reliable, scalable performance.
                         </p>
-                        <p class="section-subtitle">
+                        <p class="section-subtitle" data-i18n="skills.p2">
                             On the frontend, I apply a detail-oriented engineering approach. Leveraging <strong>React and TypeScript</strong>, I build modular, performant interfaces rooted in the DRY principle. By eliminating redundant CSS, extracting complex logic into reusable components, and seamlessly integrating <strong>i18n localization</strong>.
                         </p>
-                        <p class="section-subtitle">
+                        <p class="section-subtitle" data-i18n="skills.p3">
                             Additionally, I actively bridge the engineering side with intelligent tools. By embracing advanced <strong>AI Workflows and Prompt Engineering</strong>, I accelerate my learning curves, optimize CI/CD pipelines, and streamline daily testing routines.
                         </p>
                     </div>
@@ -118,8 +128,8 @@
         <section id="projects" class="section-projects">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Portfolio</span>
-                    <h2 class="section-title">Featured <span class="highlight">Projects.</span></h2>
+                    <span class="badge" data-i18n="projects.badge">Portfolio</span>
+                    <h2 class="section-title" data-i18n="projects.title">Featured <span class="highlight">Projects.</span></h2>
                 </div>
                 
                 <div id="projects-grid" class="projects-grid"></div>
@@ -129,8 +139,8 @@
         <section id="certs" class="section-certs">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Continuous Learning</span>
-                    <h2 class="section-title">My <span class="highlight">Certifications.</span></h2>
+                    <span class="badge" data-i18n="certs.badge">Continuous Learning</span>
+                    <h2 class="section-title" data-i18n="certs.title">My <span class="highlight">Certifications.</span></h2>
                 </div>
                 
                 <div id="certs-grid" class="certs-grid"></div>
@@ -142,35 +152,35 @@
                 <div class="contact-card">
                     <div class="glass-shine"></div>
 
-                    <span class="badge">Ready to start?</span>
-                    <h2 class="contact-title">Let's build something<br><span class="highlight">exceptional</span> together.</h2>
+                    <span class="badge" data-i18n="contact.badge">Ready to start?</span>
+                    <h2 class="contact-title" data-i18n="contact.title">Let's build something<br><span class="highlight">exceptional</span> together.</h2>
                 </div>
 
                 <div class="footer-bottom">
                     <div class="social-links">
                         <a href="tel:+48781686345" title="Phone" aria-label="Call Kacper">
                             <i class="fa-solid fa-phone"></i>
-                            <span class="link-details">Call me</span>
+                            <span class="link-details" data-i18n="contact.call">Call me</span>
                         </a>
                         
                         <a href="https://www.facebook.com/kacper.gumulak.7" target="_blank" title="Facebook" aria-label="Kacper's Facebook Profile">
                             <i class="fa-brands fa-facebook"></i>
-                            <span class="link-details">Facebook page</span>
+                            <span class="link-details" data-i18n="contact.facebook">Facebook page</span>
                         </a>
                         
                         <a href="https://www.linkedin.com/in/kacper-gumulak-dev/" target="_blank" title="LinkedIn" aria-label="Kacper's LinkedIn Profile">
                             <i class="fa-brands fa-linkedin"></i>
-                            <span class="link-details">LinkedIn profile</span>
+                            <span class="link-details" data-i18n="contact.linkedin">LinkedIn profile</span>
                         </a>
                         
                         <a href="https://github.com/zephir-x" target="_blank" title="GitHub" aria-label="Kacper's GitHub Profile">
                             <i class="fa-brands fa-github"></i>
-                            <span class="link-details">Check my code</span>
+                            <span class="link-details" data-i18n="contact.github">Check my code</span>
                         </a>
 
                         <a href="mailto:kacper.gumulak@gmail.com" title="Email" aria-label="Email Kacper">
                             <i class="fa-solid fa-envelope"></i>
-                            <span class="link-details">Email me</span>
+                            <span class="link-details" data-i18n="contact.email">Email me</span>
                         </a>
                     </div>
                 </div>
@@ -178,6 +188,7 @@
         </footer>
     </main>
 
+    <script src="/scripts/i18n.js"></script>
     <script src="/scripts/main.js"></script>
 </body>
 </html>

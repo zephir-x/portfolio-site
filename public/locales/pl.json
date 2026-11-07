@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "certs": "Certyfikaty",
+    "contact": "Kontakt",
+    "downloadCv": "POBIERZ CV"
+  },
+  "hero": {
+    "badge": "Szukam roli Juniora / Stażu",
+    "title": "Cześć, jestem <span class=\"highlight\"><br>Kacper Gumulak</span>",
+    "subtitle": "Student informatyki i <strong>Inżynier Oprogramowania</strong>. Łączę solidny backend w C#/.NET z dynamicznymi interfejsami w React oraz nowoczesną architekturą Cloud-Native, tworząc skalowalne aplikacje end-to-end.",
+    "btnProjects": "Zobacz Moje Projekty <i class=\"fa-solid fa-arrow-right ml-8\"></i>",
+    "btnTalk": "Porozmawiajmy"
+  },
+  "about": {
+    "badge": "Moja Historia",
+    "title": "Więcej niż <span class=\"highlight\">Kod.</span>",
+    "p1": "Jestem studentem Informatyki na Politechnice Krakowskiej z niezwykle pragmatycznym podejściem do rozwiązywania problemów. Traktuję inżynierię oprogramowania nie tylko jako pisanie składni, ale jako projektowanie niezawodnych systemów, które dostarczają realną wartość. Biorę pełną odpowiedzialność za moją pracę, napędzany wyzwaniami transformacji złożonych wymagań biznesowych w logiczne, dobrze ułożone architektury.",
+    "p2": "Moja droga zawodowa nie zaczęła się w IDE. Lata doświadczenia w profesjonalnej obsłudze klienta wykuły mój najsilniejszy atut: komunikację. Nauczyłem się, jak aktywnie słuchać, deeskalować stresujące sytuacje i tłumaczyć skomplikowany, techniczny żargon na <span class=\"highlight\">jasny, przyjazny język</span>. Buduję dla ludzi, nie tylko dla maszyn.",
+    "p3": "Moja chęć do nauki i optymalizacji wykracza poza tradycyjne programowanie. Aktywnie wykorzystuję narzędzia AI i inżynierię promptów, aby usprawnić moją codzienną pracę i przyspieszyć tworzenie kodu. Kiedy odchodzę od klawiatury, by zachować zdrowy balans, znajdziesz mnie na ścieżkach biegowych, siłowni, śledzącego nowinki technologiczne lub ćwiczącego mój hiszpański."
+  },
+  "skills": {
+    "badge": "Mój Tech Stack",
+    "title": "Narzędzia <span class=\"highlight\">Pracy.</span>",
+    "p1": "Od projektowania baz danych po zautomatyzowane wdrażanie chmury, używam nowoczesnego i wszechstronnego zestawu narzędzi. Skupiam się na rygorystycznych zasadach backendu, takich jak <strong>Clean Architecture</strong> i <strong>MediatR</strong>, w połączeniu z infrastrukturą jako kodem (Terraform) i rozwiązaniami bezserwerowymi (Azure), zapewniając wysoką niezawodność i skalowalność.",
+    "p2": "We frontendzie stosuję inżynieryjne podejście z dbałością o detale. Wykorzystując <strong>React i TypeScript</strong>, buduję modułowe i wydajne interfejsy oparte na zasadzie DRY – eliminując redundantny kod CSS, wyciągając logikę do wielokrotnego użytku i płynnie integrując lokalizację <strong>i18n</strong>.",
+    "p3": "Dodatkowo aktywnie łączę inżynierię z inteligentnymi narzędziami. Wdrażając zaawansowane <strong>wzorce AI i Prompt Engineering</strong>, przyspieszam proces mojej nauki, optymalizuję potoki CI/CD oraz automatyzuję codzienne rutyny testowe."
+  },
+  "projects": {
+    "badge": "Portfolio",
+    "title": "Wybrane <span class=\"highlight\">Projekty.</span>",
+    "viewCode": "ZOBACZ KOD <i class=\"fa-brands fa-github ml-8\"></i>"
+  },
+  "certs": {
+    "badge": "Ciągła Nauka",
+    "title": "Moje <span class=\"highlight\">Certyfikaty.</span>",
+    "verify": "Zweryfikuj <i class=\"fa-solid fa-arrow-right ml-8\"></i>"
+  },
+  "contact": {
+    "badge": "Gotowy do startu?",
+    "title": "Zbudujmy razem coś<br><span class=\"highlight\">wyjątkowego</span>.",
+    "call": "Zadzwoń",
+    "facebook": "Profil Facebook",
+    "linkedin": "Profil LinkedIn",
+    "github": "Sprawdź mój kod",
+    "email": "Napisz do mnie"
+  }
+}

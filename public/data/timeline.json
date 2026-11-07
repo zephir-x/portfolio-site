@@ -2,37 +2,73 @@
   {
     "id": 1,
     "date": "2023 - Present",
-    "title": "Engineering Foundations",
-    "description": "Began Computer Science studies at Cracow University of Technology. Building strong foundations in OOP, algorithms, SQL databases, and working across Windows/Linux (WSL) environments."
+    "title": {
+      "en": "Engineering Foundations",
+      "pl": "Fundamenty Inżynierii"
+    },
+    "description": {
+      "en": "Began Computer Science studies at Cracow University of Technology. Building strong foundations in OOP, algorithms, SQL databases, and working across Windows/Linux (WSL) environments.",
+      "pl": "Rozpoczęcie studiów informatycznych na Politechnice Krakowskiej. Budowanie silnych fundamentów z programowania obiektowego, algorytmów, baz danych SQL oraz pracy w środowiskach Windows/Linux (WSL)."
+    }
   },
   {
     "id": 2,
     "date": "2024 - 2025",
-    "title": "Backend & Architecture",
-    "description": "Deep dive into the .NET ecosystem. Built desktop apps (WPF/MVVM) and developed ASP.NET Core REST APIs with Entity Framework Core, using Postman for endpoint testing."
+    "title": {
+      "en": "Backend & Architecture",
+      "pl": "Backend i Architektura"
+    },
+    "description": {
+      "en": "Deep dive into the .NET ecosystem. Built desktop apps (WPF/MVVM) and developed ASP.NET Core REST APIs with Entity Framework Core, using Postman for endpoint testing.",
+      "pl": "Głębokie wejście w ekosystem .NET. Tworzenie aplikacji desktopowych (WPF/MVVM) oraz rozwój REST API w ASP.NET Core z użyciem Entity Framework Core i testowaniem endpointów w Postmanie."
+    }
   },
   {
     "id": 3,
     "date": "Early 2026",
-    "title": "DevOps & JS Fundamentals",
-    "description": "Expanded my knowledge toward web deployment and scripting. Certified in Docker containerization, Git version control, and built solid JavaScript foundations."
+    "title": {
+      "en": "DevOps & JS Fundamentals",
+      "pl": "Podstawy DevOps i JS"
+    },
+    "description": {
+      "en": "Expanded my knowledge toward web deployment and scripting. Certified in Docker containerization, Git version control, and built solid JavaScript foundations.",
+      "pl": "Rozszerzenie wiedzy w kierunku wdrażania aplikacji webowych i skryptowania. Certyfikacje z konteneryzacji Docker, systemu kontroli wersji Git oraz budowa solidnych fundamentów JavaScript."
+    }
   },
   {
     "id": 4,
     "date": "Mid 2026",
-    "title": "Commercial Web Development",
-    "description": "Started a Web Developer Internship at Allventures. Dove into TypeScript, React, and Vite to complete my Fullstack skill set while integrating AI tools to streamline daily coding routines."
+    "title": {
+      "en": "Commercial Web Development",
+      "pl": "Komercyjny Web Development"
+    },
+    "description": {
+      "en": "Started a Web Developer Internship at Allventures. Dove into TypeScript, React, and Vite to complete my Fullstack skill set while integrating AI tools to streamline daily coding routines.",
+      "pl": "Rozpoczęcie stażu jako Web Developer w Allventures. Praca z TypeScript, React i Vite w celu dopełnienia umiejętności Fullstack, przy jednoczesnej integracji narzędzi AI usprawniających codzienne kodowanie."
+    }
   },
   {
     "id": 5,
     "date": "Late 2026",
-    "title": "Enterprise & Cloud Pivot",
-    "description": "Transitioned towards the 'You build it, you run it' philosophy and complex enterprise systems. Mastered Terraform, SignalR, and strict Domain-Driven Design (DDD) to build real-time, scalable applications."
+    "title": {
+      "en": "Enterprise & Cloud Pivot",
+      "pl": "Zwrot ku Enterprise i Cloud"
+    },
+    "description": {
+      "en": "Transitioned towards the 'You build it, you run it' philosophy and complex enterprise systems. Mastered Terraform, SignalR, and strict Domain-Driven Design (DDD) to build real-time, scalable applications.",
+      "pl": "Przejście w stronę filozofii 'You build it, you run it' oraz złożonych systemów enterprise. Opanowanie Terraform, SignalR i ścisłego Domain-Driven Design (DDD) do budowy skalowalnych aplikacji czasu rzeczywistego."
+    }
   },
   {
     "id": 6,
     "date": "Future",
-    "title": "Ready to Build",
-    "description": "Seeking my first commercial role as a Junior Cloud/.NET Engineer to bring my dedication, robust infrastructure awareness, and skills to a real-world development team."
+    "title": {
+      "en": "Ready to Build",
+      "pl": "Gotowy do Działania"
+    },
+    "description": {
+      "en": "Seeking my first commercial role as a Junior Cloud/.NET Engineer to bring my dedication, robust infrastructure awareness, and skills to a real-world development team.",
+      "pl": "Poszukiwanie pierwszej komercyjnej roli jako Junior Cloud/.NET Engineer, aby wnieść zaangażowanie, świadomość solidnej infrastruktury i umiejętności do profesjonalnego zespołu programistów."
+    }
   }
 ]

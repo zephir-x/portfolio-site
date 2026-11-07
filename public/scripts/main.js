@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCerts();
     initCursorGlow();
     initRevealAnimations();
+
+    // Listening for language changes – triggers a re-rendering of the JSONs
+    window.addEventListener('languageChanged', () => {
+        loadTimeline();
+        loadProjects();
+        loadCerts();
+    });
 });
 
 function initNavbar() {
@@ -95,13 +102,15 @@ function renderTimeline(data) {
     const grid = document.getElementById('timeline-grid');
     if (!grid) return;
 
+    const lang = window.i18n ? window.i18n.currentLang : 'en';
+
     grid.innerHTML = data.map(item => `
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
                 <span class="timeline-date">${item.date}</span>
-                <h3 class="timeline-title">${item.title}</h3>
-                <p class="timeline-desc">${item.description}</p>
+                <h3 class="timeline-title">${item.title[lang]}</h3>
+                <p class="timeline-desc">${item.description[lang]}</p>
             </div>
         </div>
     `).join('');
@@ -156,24 +165,23 @@ function renderProjects(projects) {
     const grid = document.getElementById('projects-grid');
     if (!grid) return;
 
+    // We retrieve the current language from the global instance (defaults to 'en')
+    const lang = window.i18n ? window.i18n.currentLang : 'en';
+
     // We map the JSON array to a string with HTML code and inject it into the container
     grid.innerHTML = projects.map(project => `
         <article class="project-card">
             <div class="project-graphic-wrapper">
                 <img src="${project.imageUrl}" alt="${project.title} screenshot" class="project-graphic" loading="lazy">
             </div>
-
             <div class="project-details">
                 <div class="project-header-row">
                     <h3 class="project-title">${project.title}</h3>
-                    
-                    <a href="${project.githubUrl}" target="_blank" class="project-code-link">
+                    <a href="${project.githubUrl}" target="_blank" class="project-code-link" data-i18n="projects.viewCode">
                         VIEW CODE <i class="fa-brands fa-github ml-8"></i>
                     </a>
                 </div>
-                
-                <p class="project-description">${project.description}</p>
-                
+                <p class="project-description">${project.description[lang]}</p>
                 <div class="project-tags">
                     ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
                 </div>
@@ -182,6 +190,9 @@ function renderProjects(projects) {
     `).join('');
 
     grid.querySelectorAll('.project-card').forEach(initRevealElement);
+
+    // We are reapplying the static translations, just in case the "VIEW CODE" buttons have reloaded.
+    if(window.i18n) window.i18n.updateStaticDOM();
 }
 
 async function loadCerts() {
@@ -198,21 +209,24 @@ function renderCerts(data) {
     const grid = document.getElementById('certs-grid');
     if (!grid) return;
 
+    const lang = window.i18n ? window.i18n.currentLang : 'en';
+
     grid.innerHTML = data.map(cert => `
         <div class="cert-card">
             <div class="glass-shine"></div> <i class="${cert.icon} cert-watermark"></i>
             <div class="cert-content">
-                <span class="cert-date">${cert.date}</span>
+                <span class="cert-date">${cert.date[lang]}</span>
                 <h3 class="cert-title">${cert.title}</h3>
                 <p class="cert-issuer">${cert.issuer}</p>
             </div>
-            <a href="${cert.verifyUrl}" target="_blank" class="cert-link">
+            <a href="${cert.verifyUrl}" target="_blank" class="cert-link" data-i18n="certs.verify">
                 Verify <i class="fa-solid fa-arrow-right ml-8"></i>
             </a>
         </div>
     `).join('');
 
     grid.querySelectorAll('.cert-card').forEach(initRevealElement);
+    if(window.i18n) window.i18n.updateStaticDOM();
 }
 
 function initCursorGlow() {

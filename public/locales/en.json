@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certs": "Certs",
+    "contact": "Contact",
+    "downloadCv": "DOWNLOAD CV"
+  },
+  "hero": {
+    "badge": "Seeking Junior / Internship Roles",
+    "title": "Hello, I'm <span class=\"highlight\"><br>Kacper Gumulak</span>",
+    "subtitle": "A Computer Science student and <strong>Software Engineer</strong>. I bridge the gap between robust C#/.NET backends, dynamic React interfaces, and modern Cloud-Native architectures to build scalable, end-to-end applications.",
+    "btnProjects": "View My Projects <i class=\"fa-solid fa-arrow-right ml-8\"></i>",
+    "btnTalk": "Let's Talk"
+  },
+  "about": {
+    "badge": "My Story",
+    "title": "Beyond the <span class=\"highlight\">Code.</span>",
+    "p1": "I am a Computer Science student at Cracow University of Technology with a highly pragmatic approach to problem-solving. I view software engineering not just as writing syntax, but as designing reliable systems that deliver tangible value. I take ownership of my work, thriving on the challenge of transforming complex business requirements into logical, well-structured architectures.",
+    "p2": "My professional journey didn't start in an IDE. Years of experience in customer service forged one of my strongest assets: communication. I learned how to listen actively, de-escalate stressful situations, and translate complex technical jargon into <span class=\"highlight\">clear, user-friendly language</span>. I build for people, not just for machines.",
+    "p3": "My drive to learn and optimize extends beyond traditional programming. I actively leverage AI tools and prompt engineering to streamline my daily workflows and accelerate development. When I step away from the keyboard to maintain a healthy balance, you'll find me out on running trails, hitting the gym, exploring new tech trends, or practicing my Spanish."
+  },
+  "skills": {
+    "badge": "My Tech Stack",
+    "title": "Tools of the <span class=\"highlight\">Trade.</span>",
+    "p1": "From database design to automated cloud provisioning, I utilize a modern and versatile toolset. I focus on strict backend principles like <strong>Clean Architecture</strong> and <strong>MediatR</strong>, combined with Infrastructure as Code (Terraform) and serverless deployments (Azure) to ensure highly reliable, scalable performance.",
+    "p2": "On the frontend, I apply a detail-oriented engineering approach. Leveraging <strong>React and TypeScript</strong>, I build modular, performant interfaces rooted in the DRY principle. By eliminating redundant CSS, extracting complex logic into reusable components, and seamlessly integrating <strong>i18n localization</strong>.",
+    "p3": "Additionally, I actively bridge the engineering side with intelligent tools. By embracing advanced <strong>AI Workflows and Prompt Engineering</strong>, I accelerate my learning curves, optimize CI/CD pipelines, and streamline daily testing routines."
+  },
+  "projects": {
+    "badge": "Portfolio",
+    "title": "Featured <span class=\"highlight\">Projects.</span>",
+    "viewCode": "VIEW CODE <i class=\"fa-brands fa-github ml-8\"></i>"
+  },
+  "certs": {
+    "badge": "Continuous Learning",
+    "title": "My <span class=\"highlight\">Certifications.</span>",
+    "verify": "Verify <i class=\"fa-solid fa-arrow-right ml-8\"></i>"
+  },
+  "contact": {
+    "badge": "Ready to start?",
+    "title": "Let's build something<br><span class=\"highlight\">exceptional</span> together.",
+    "call": "Call me",
+    "facebook": "Facebook page",
+    "linkedin": "LinkedIn profile",
+    "github": "Check my code",
+    "email": "Email me"
+  }
+}
