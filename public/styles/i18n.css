@@ -59,7 +59,7 @@
 /* LANGUAGE-SWITCHING ANIMATIONS (Blur Fade) */
 
 /* Seamlessly adding transition attributes to elements that will be animated */
-main > section, main > footer, .nav-links a, .nav-pill, .nav-actions .btn-primary {
+main > section, main > footer, .nav-links a, .nav-pill, .nav-actions .btn-primary, .error-page {
     transition: opacity 0.3s ease-out, filter 0.8s ease-out, color 0.3s, background-color 0.3s, border-color 0.3s, width 0.4s;
 }
 
@@ -68,7 +68,8 @@ body.lang-transitioning main > section,
 body.lang-transitioning main > footer,
 body.lang-transitioning .nav-links a,
 body.lang-transitioning .nav-pill,
-body.lang-transitioning .nav-actions .btn-primary {
+body.lang-transitioning .nav-actions .btn-primary,
+body.lang-transitioning .error-page {
     transition: opacity 0.25s ease-in, filter 0.25s ease-in !important;
     opacity: 0 !important;
     filter: blur(8px) !important;

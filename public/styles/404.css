@@ -1,0 +1,60 @@
+/* Container to center everything vertically and horizontally */
+.error-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glassmorphism card for the error message */
+.error-page {
+    background-color: rgba(23, 23, 23, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Big 404 header */
+.error-page h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+}
+
+/* Error description text */
+.error-page p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Make sure the button has the right shape and transition */
+.error-page .btn-primary {
+    border-radius: 42px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    padding: 12px 32px;
+}
+
+.error-page .btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.2);
+}

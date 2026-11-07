@@ -3,16 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/profile.png">
     <title>404 - Page Not Found | Kacper Gumulak</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/i18n.css"> 
 </head>
 <body>
-    <div class="error-page">
-        <h1>404</h1>
-        <p>Oops! Looks like you got lost.<br>The page you're looking for doesn't exist.</p>
-        <a href="/" class="btn btn-primary">Return to Home</a>
-    </div>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <header class="navbar" style="border-bottom: none; background: transparent; backdrop-filter: none;">
+        <div class="container navbar-container" style="justify-content: flex-end;">
+            <div class="nav-actions">
+                <div class="glass-lang-switch" id="lang-switcher">
+                    <div class="switch-indicator" id="lang-indicator"></div>
+                    <button class="switch-btn active" data-lang="en">EN</button>
+                    <button class="switch-btn" data-lang="pl">PL</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="error-page-wrapper">
+        <div class="milky-way-bg"></div>
+        
+        <div class="error-page">
+            <h1>404</h1>
+            <p data-i18n="notFound.message">Oops! Looks like you got lost.<br>The page you're looking for doesn't exist.</p>
+            <a href="/" class="btn btn-primary" data-i18n="notFound.button">Return to Home</a>
+        </div>
+    </main>
+
+    <script src="/scripts/i18n.js"></script>
+    <script>
+        // Cursor initialization for the 404 page (part of the logic from main.js moved here for simplicity)
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursorGlow = document.getElementById('cursor-glow');
+            if (cursorGlow) {
+                document.addEventListener('mousemove', (e) => {
+                    cursorGlow.style.left = `${e.clientX}px`;
+                    cursorGlow.style.top = `${e.clientY}px`;
+                });
+                
+                document.body.addEventListener('mouseover', (e) => {
+                    if (e.target.closest('a, button, .switch-btn')) {
+                        cursorGlow.classList.add('active');
+                    }
+                });
+
+                document.body.addEventListener('mouseout', (e) => {
+                    if (e.target.closest('a, button, .switch-btn')) {
+                        cursorGlow.classList.remove('active');
+                    }
+                });
+            }
+
+            // Fallback for i18n on the 404 page (since we don't load main.js)
+            if (window.i18n) {
+                // If the user has a saved preference, we update the view upon startup
+                window.i18n.updateStaticDOM();
+            }
+        });
+    </script>
 </body>
 </html>

@@ -47,5 +47,9 @@
     "linkedin": "Profil LinkedIn",
     "github": "Sprawdź mój kod",
     "email": "Napisz do mnie"
+  },
+  "notFound": {
+    "message": "Ups! Wygląda na to, że się zgubiłeś.<br>Strona, której szukasz, nie istnieje.",
+    "button": "Wróć do Startu"
   }
 }

@@ -37,11 +37,12 @@ You can view the live, fully functional website here:
 
 This portfolio is packed with modern UI/UX principles and interactive elements:
 
-* **Glassmorphism Design:** All cards and UI components feature frosted-glass effects with CSS `backdrop-filter`, semi-transparent backgrounds, and subtle borders.
-* **Dynamic Cursor Glow:** A custom, interactive ambient light (flashlight effect) that follows the user's cursor but intelligently hides when hovering over interactive elements.
-* **Animated Scroll Timeline:** A custom-built vertical timeline in the "About Me" section that utilizes the Intersection Observer API to animate entries smoothly as they enter the viewport.
-* **Mobile-First Responsiveness:** Fully adapted for all screen sizes with horizontal scrolling navbars for mobile, scaled typography, and fluid flexbox/grid layouts.
-* **Decoupled Data (JSON):** Content for Projects, Skills, and Certifications is entirely separated from the HTML and loaded asynchronously via Fetch API from structured JSON files.
+- **Custom i18n Engine (EN/PL):** A completely bespoke, dependency-free internationalization system utilizing asynchronous JSON fetching to switch languages seamlessly on the fly.
+- **Cinematic Animations & GPU Optimization:** Features asymmetrical blur-fade transitions during language switches and a hardware-accelerated ambient background (Milky Way) to ensure smooth 60fps performance without layout thrashing.
+- **Glassmorphism Design:** All cards and UI components feature frosted-glass effects with CSS `backdrop-filter`, semi-transparent backgrounds, and subtle borders.
+- **Dynamic Cursor Glow:** A custom, interactive ambient light (flashlight effect) that follows the user's cursor but intelligently hides when hovering over interactive elements.
+- **Animated Scroll Timeline:** A custom-built vertical timeline in the "About Me" section that utilizes the Intersection Observer API to animate entries smoothly as they enter the viewport.
+- **Decoupled Data (JSON):** Content for Projects, Skills, and Certifications is entirely separated from the HTML and loaded asynchronously via Fetch API from structured JSON databases.
 
 ## Built With / Technologies Used
 
@@ -66,18 +67,23 @@ To strictly adhere to the **DRY (Don't Repeat Yourself)** principle and keep the
 ```text
 portfolio-site/
 ├── assets/
-│   ├── images/         # Profile pictures and project thumbnails
+│   ├── images/         # Profile pictures, project thumbnails, and ambient background
 │   ├── prototype/      # Prototype graphics
 │   └── resume/         # My actual CV to download
 ├── data/
-│   ├── certs.json      # Certifications data
-│   ├── projects.json   # Portfolio projects data
+│   ├── certs.json      # Certifications data (multi-language nested)
+│   ├── projects.json   # Portfolio projects data (multi-language nested)
 │   ├── skills.json     # Tech stack data
-│   └── timeline.json   # About Me journey data
+│   └── timeline.json   # About Me journey data (multi-language nested)
+├── locales/
+│   ├── en.json         # Static UI English translations
+│   └── pl.json         # Static UI Polish translations
 ├── scripts/
-│   └── main.js         # Fetch API logic, Intersection Observers, and Cursor 
+│   ├── i18n.js         # Custom internationalization engine & state manager
+│   └── main.js         # Fetch API logic, Intersection Observers, and Cursor UI 
 ├── styles/
-│   ├── glass.css       # Global Glassmorphism & UI effects
+│   ├── glass.css       # Global Glassmorphism & GPU ambient background
+│   ├── i18n.css        # Language switcher styles & blur-fade transitions
 │   ├── mobile.css      # Media queries for responsiveness
 │   ├── reset.css       # Resets, vars, and custom scrollbars
 │   └── ... (modular CSS files for components)
