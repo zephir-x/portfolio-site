@@ -12,7 +12,7 @@ Built from scratch without heavy frontend frameworks, focusing on clean architec
 
 ---
 
-![Page View](/public/assets/images/portfolio-site.jpg)
+![Page View](/public/assets/images/portfolio-site.png)
 
 ---
 

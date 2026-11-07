@@ -17,7 +17,7 @@
       "en": "A custom-built, deterministic 2D physics billiards engine with real-time 1v1 online multiplayer. Features strict Domain-Driven Design (DDD), a proprietary 480Hz collision resolver, an authoritative host network model with a dedicated Docker relay server, and 100% automated test coverage.",
       "pl": "Autorski, deterministyczny silnik fizyki bilarda 2D z trybem multiplayer 1v1 w czasie rzeczywistym. Wykorzystuje restrykcyjne DDD, własny resolver kolizji 480Hz, autorytatywny model sieciowy oparty na serwerze przekaźnikowym w Dockerze i posiada 100% pokrycie testami."
     },
-    "imageUrl": "/assets/images/billiards.jpg",
+    "imageUrl": "/assets/images/billiards.png",
     "tags": ["C# 13", ".NET 9", "Multiplayer (TCP Relay)", "Docker", "Raylib-cs", "Domain-Driven-Design", "Physics Simulation","Agentic-Driven", "xUnit", "Clean Architecture"],
     "githubUrl": "https://github.com/zephir-x/billards-game"
   },
@@ -72,7 +72,7 @@
       "en": "A decoupled, framework-less interactive portfolio powered by Vanilla JS, JSON, and fully containerized with Docker.",
       "pl": "Zdecoupled, interaktywne portfolio bez frameworków, napędzane Vanilla JS, JSON i w pełni skonteneryzowane przy użyciu Dockera."
     },
-    "imageUrl": "/assets/images/portfolio-site.jpg",
+    "imageUrl": "/assets/images/portfolio-site.png",
     "tags": ["Docker", "JavaScript", "HTML5", "CSS3", "JSON"],
     "githubUrl": "https://github.com/zephir-x/portfolio-site"
   },

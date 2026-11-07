@@ -62,6 +62,8 @@ class I18nService {
         if (this.currentLang === 'pl') {
             switcher.classList.add('pl-active');
         }
+
+        btns.forEach(b => b.classList.remove('active'));
         
         const activeBtn = switcher.querySelector(`[data-lang="${this.currentLang}"]`);
         if (activeBtn) activeBtn.classList.add('active');
@@ -92,6 +94,7 @@ class I18nService {
                     // We remove the class -> the browser will smoothly apply a 0.8s blur fade from the base CSS styles
                     requestAnimationFrame(() => {
                         document.body.classList.remove('lang-transitioning');
+                        window.dispatchEvent(new Event('resize'));
                         
                         // Adjust the position of the yellow nav-pill in case the new text in the navigation changes its width
                         const activeLink = document.querySelector('.nav-links a.active');
